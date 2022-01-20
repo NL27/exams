@@ -76,7 +76,7 @@ void	ft_convert(char c, va_list arg)
 	else if (c == 'd')
 		ft_putnbr_base(va_arg(arg, int), 10);
 	else if (c == 'x')
-		ft_putnbr_base(va_arg(arg, int), 10);
+		ft_putnbr_base(va_arg(arg, unsigned int), 16);
 }
 
 int	printf(const char **txt, ...)
